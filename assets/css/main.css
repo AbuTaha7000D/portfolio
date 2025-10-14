@@ -720,7 +720,7 @@ section,
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: color-mix(in srgb, var(--default-color), transparent 20%);
+	color: var(--heading-color);
 	margin-bottom: 10px;
 }
 

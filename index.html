@@ -50,11 +50,16 @@
 		</a>
 
 		<div class="social-links text-center">
-			<a href="https://github.com/AbuTaha7000D" class="github"><i class="bi bi-github"></i></a>
-			<a href="https://facebook.com/abutaha7000d" class="facebook"><i class="bi bi-facebook"></i></a>
-			<a href="https://t.me/AbuTaha7000D" class="telegram"><i class="bi bi-telegram"></i></a>
-			<a href="mailto:eng.mahmoud.e.hussein@gmail.com" class="google"><i class="bi bi-envelope"></i></a>
-			<a href="https://linkedin.com/in/abutaha7000d" class="linkedin"><i class="bi bi-linkedin"></i></a>
+			<a href="https://github.com/AbuTaha7000D" class="github" aria-label="GitHub"><i
+					class="bi bi-github"></i></a>
+			<a href="https://facebook.com/abutaha7000d" class="facebook" aria-label="Facebook"><i
+					class="bi bi-facebook"></i></a>
+			<a href="https://t.me/AbuTaha7000D" class="telegram" aria-label="Telegram"><i
+					class="bi bi-telegram"></i></a>
+			<a href="mailto:eng.mahmoud.e.hussein@gmail.com" class="google" aria-label="Email"><i
+					class="bi bi-envelope"></i></a>
+			<a href="https://linkedin.com/in/abutaha7000d" class="linkedin" aria-label="LinkedIn"><i
+					class="bi bi-linkedin"></i></a>
 		</div>
 
 		<nav id="navmenu" class="navmenu">
@@ -373,7 +378,7 @@
 							<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
 								<i class="bi bi-telephone flex-shrink-0"></i>
 								<div>
-									<h3>Call</h3>
+									<h3>Call Me</h3>
 									<p>+20 109 799 8754</p>
 								</div>
 							</div><!-- End Info Item -->
@@ -381,7 +386,7 @@
 							<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
 								<i class="bi bi-envelope flex-shrink-0"></i>
 								<div>
-									<h3>Email</h3>
+									<h3>Email Me</h3>
 									<p>eng.mahmoud.e.hussein@gmail.com</p>
 								</div>
 							</div><!-- End Info Item -->
@@ -396,43 +401,41 @@
 					<div class="col-lg-7">
 						<form action="https://formspree.io/f/mzzjknob" method="post" class="php-email-form"
 							data-aos="fade-up" data-aos-delay="200">
-							<form action="https://formspree.io/f/mzzjknob" method="post" data-aos="fade-up"
-								data-aos-delay="200">
-								<div class="row gy-4">
+							<!-- The nested form was removed, and its content is now directly inside the outer form -->
+							<div class="row gy-4">
 
-									<div class="col-md-6">
-										<label for="name-field" class="pb-2">Your Name</label>
-										<input type="text" name="name" id="name-field" class="form-control" required="">
-									</div>
-
-									<div class="col-md-6">
-										<label for="email-field" class="pb-2">Your Email</label>
-										<input type="email" class="form-control" name="email" id="email-field"
-											required="">
-									</div>
-
-									<div class="col-md-12">
-										<label for="subject-field" class="pb-2">Subject</label>
-										<input type="text" class="form-control" name="subject" id="subject-field"
-											required="">
-									</div>
-
-									<div class="col-md-12">
-										<label for="message-field" class="pb-2">Message</label>
-										<textarea class="form-control" name="message" rows="10" id="message-field"
-											required=""></textarea>
-									</div>
-
-									<div class="col-md-12 text-center">
-										<div class="loading">Loading</div>
-										<div class="error-message"></div>
-										<div class="sent-message">Your message has been sent. Thank you!</div>
-
-										<button type="submit">Send Message</button>
-									</div>
-
+								<div class="col-md-6">
+									<label for="name-field" class="pb-2">Your Name</label>
+									<input type="text" name="name" id="name-field" class="form-control" required="">
 								</div>
-							</form>
+
+								<div class="col-md-6">
+									<label for="email-field" class="pb-2">Your Email</label>
+									<input type="email" class="form-control" name="email" id="email-field" required="">
+								</div>
+
+								<div class="col-md-12">
+									<label for="subject-field" class="pb-2">Subject</label>
+									<input type="text" class="form-control" name="subject" id="subject-field"
+										required="">
+								</div>
+
+								<div class="col-md-12">
+									<label for="message-field" class="pb-2">Message</label>
+									<textarea class="form-control" name="message" rows="10" id="message-field"
+										required=""></textarea>
+								</div>
+
+								<div class="col-md-12 text-center">
+									<div class="loading">Loading</div>
+									<div class="error-message"></div>
+									<div class="sent-message">Your message has been sent. Thank you!</div>
+
+									<button type="submit">Send Message</button>
+								</div>
+
+							</div>
+						</form>
 					</div><!-- End Contact Form -->
 
 				</div>
@@ -447,7 +450,8 @@
 
 		<div class="container">
 			<div class="copyright text-center">
-				<p>© Copyright <strong><span>Mahmoud Ehab</span></strong>. All Rights Reserved</p>
+				<p>© Copyright <span id="copyright-year"></span> <strong><span>Mahmoud Ehab</span></strong>. All Rights
+					Reserved</p>
 				<!-- All the links in the footer should remain intact. -->
 				<!-- You can delete the links only if you've purchased the pro version. -->
 				<!-- Licensing information: https://bootstrapmade.com/license/ -->
@@ -473,11 +477,22 @@
 	<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 	<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.js"></script>
 	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
 	<!-- Main JS File -->
 	<script src="assets/js/main.js"></script>
+	<script>
+		// Dynamically update age
+		const birthDate = new Date('2001-11-27');
+		const age = new Date(new Date() - birthDate).getFullYear() - 1970;
+		const ageElement = document.getElementById('age');
+		if (ageElement) {
+			ageElement.textContent = age;
+		}
+		// Dynamically update copyright year
+		document.getElementById('copyright-year').textContent = new Date().getFullYear();
+	</script>
 
 </body>
 
