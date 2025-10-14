@@ -2,165 +2,485 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>Mahmoud Ehab | Portfolio</title>
-	<link rel="stylesheet" href="style.css">
-	<!-- Font Awesome Icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+	<!-- Main CSS File -->
+	<link href="assets/css/main.css" rel="stylesheet">
+
+	<!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body>
-	<header>
-		<div class="container">
-			<img src="assets/img/profile.jpg" alt="Profile Photo" class="profile-photo">
-			<h1>Mahmoud Ehab</h1>
-			<p>SysAdmin | Linux Enthusiast</p>
-			<nav>
-				<a href="#about">About Me</a>
-				<a href="#experience">Experience</a>
-				<a href="#skills">Skills</a>
-				<a href="#education">Education</a>
-				<a href="#certifications">Certifications</a>
-				<a href="#volunteering">Volunteering</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact</a>
-			</nav>
+<body class="index-page">
+
+	<header id="header" class="header dark-background d-flex flex-column">
+		<i class="header-toggle d-xl-none bi bi-list"></i>
+
+		<div class="profile-img">
+			<img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
 		</div>
+
+		<a href="index.html" class="logo d-flex align-items-center justify-content-center">
+			<!-- Uncomment the line below if you also wish to use an image logo -->
+			<!-- <img src="assets/img/logo.png" alt=""> -->
+			<h1 class="sitename">Mahmoud Ehab</h1>
+		</a>
+
+		<div class="social-links text-center">
+			<a href="https://github.com/AbuTaha7000D" class="github"><i class="bi bi-github"></i></a>
+			<a href="https://facebook.com/abutaha7000d" class="facebook"><i class="bi bi-facebook"></i></a>
+			<a href="https://t.me/AbuTaha7000D" class="telegram"><i class="bi bi-telegram"></i></a>
+			<a href="mailto:eng.mahmoud.e.hussein@gmail.com" class="google"><i class="bi bi-envelope"></i></a>
+			<a href="https://linkedin.com/in/abutaha7000d" class="linkedin"><i class="bi bi-linkedin"></i></a>
+		</div>
+
+		<nav id="navmenu" class="navmenu">
+			<ul>
+				<li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+				<li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+				<li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+				<li><a href="#projects"><i class="bi bi-images navicon"></i> Projects</a></li>
+				<li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+			</ul>
+		</nav>
 	</header>
 
-	<section id="about" class="container">
-		<h2>About Me</h2>
-		<p>
-			Fresh graduate System Administration Engineer skilled in Linux, Windows, networking, and cloud technologies.
-			Proficient in Python, C/C++, and SQL with strong problem-solving skills, and hands-on experience in setting
-			up and configuring computer networks including hardware installation.
-		</p><br>
-		<ul class="about-list">
-			<li><b>Full Name:</b> Mahmoud Ehab Hussein Elsayed</li>
-			<li><b>Date of Birth:</b> 27 November 2001</li>
-			<li><b>Location:</b> 50 10th of Ramadan St., Port Said, Egypt</li>
-			<li><b>Nationality:</b> Egyptian</li>
-			<li><b>Marital Status:</b> Single</li>
-		</ul>
-	</section>
+	<main class="main">
 
-	<section id="experience" class="container">
-		<h2>Professional Experience</h2>
-		<ul class="experience-list">
-			<li class="exp-item">
-				<div class="exp-row">
-					<span class="exp-position"><b>Site Coordinator | Almentor Egypt</b></span>
-					<span class="exp-date">Feb 2024 – Aug 2025</span>
-				</div>
-				<ul>
-					<li>Coordination of Almentor's offline learning sessions, ensuring participant satisfaction.</li>
-					<li>Ensure offline events are handled effectively by Almentor's team.</li>
-					<li>Support students on their learning journey by addressing their questions and providing guidance.
-					</li>
-					<li>Contribute to the mission of making quality education accessible to Arabic-speaking communities.
-					</li>
-				</ul>
-			</li>
-			<li class="exp-item">
-				<div class="exp-row">
-					<span class="exp-position"><b>Software Engineer Intern | ALX Africa</b></span>
-					<span class="exp-date">Jul 2023 – Dec 2023</span>
-				</div>
-				<ul>
-					<li>Develop and implement software solutions.</li>
-					<li>Implement new projects.</li>
-					<li>Connect with colleagues to set plans and strategies for projects.</li>
-				</ul>
-			</li>
-		</ul>
-	</section>
+		<!-- Hero Section -->
+		<section id="hero" class="hero section dark-background">
 
-	<section id="skills" class="container">
-		<h2>Skills</h2>
-		<ul class="skills-list">
-			<li><b>Programming Languages:</b> SQL, C, C++, Python</li>
-			<li><b>Operating Systems:</b> Windows, Linux</li>
-			<li><b>Tools & Technologies:</b> Git, GitHub, Docker, SQL, MS Excel, MS Word</li>
-			<li><b>Soft Skills:</b> Communication, Teamwork, Problem-solving, Leadership, Time Management, Research &
-				Learning</li>
-			<li><b>Technical Skills:</b> Linux Administration, Networking (TCP/IP, VLANs, Routing), Shell Scripting
-				(Bash, Python), Docker & Virtualization, Cloud Basics, Cybersecurity Fundamentals</li>
-		</ul>
-	</section>
+			<img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 
-	<section id="education" class="container">
-		<h2>Education</h2>
-		<ul class="education-list">
-			<li>
-				<div class="exp-row">
-					<span class="exp-position"><b>B.Sc. in Electrical Engineering (Computer & Control
-							Engineering)</b></span>
-					<span class="exp-date">Jul 2025</span>
-				</div>
-				Faculty of Engineering, Port Said University, Port Said, Egypt<br>
-				<b>Graduation Project:</b> “Snack n’ Track: AI-powered Nutrition Tracking App”
-			</li>
-		</ul>
-	</section>
-
-	<section id="certifications" class="container">
-		<h2>Certifications & Courses</h2>
-		<ul class="certifications-list">
-			<li>Cybersecurity Internship (ITI)</li>
-			<li>Cloud and Virtualization (Mahara-Tech)</li>
-			<li>Computer Network Fundamentals (Mahara-Tech)</li>
-			<li>Database Fundamentals (Mahara-Tech)</li>
-			<li>Python Programming (Udemy)</li>
-			<li>Microsoft Excel (Coursera)</li>
-		</ul>
-	</section>
-
-	<section id="volunteering" class="container">
-		<h2>Volunteering Experience</h2>
-		<ul class="volunteering-list">
-			<li>46th & 47th International Collegiate Programming Contest (ICPC)</li>
-			<li>Africa and Arab Collegiate Programming Contest (ACPC)</li>
-			<li>Egyptian Collegiate Programming Contest (ECPC)</li>
-			<li>Port Said Engineering Day (PSED)</li>
-			<li>IEEE Port Said University Student Branch (IEEE PSU SB)</li>
-			<li>IEEE R8 Entrepreneurship Week</li>
-			<li>ICPC Port Said University Community (ICPC PSU)</li>
-		</ul>
-	</section>
-
-	<section id="projects" class="container">
-		<h2>Projects</h2>
-		<div class="projects">
-			<div class="project-card">
-				<h3><a href="https://github.com/AbuTaha7000D/linux-postinstall" target="_blank">Linux Postinstall
-						Script</a></h3>
-				<p>Automated setup script to configure Linux after a fresh install.</p>
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
+				<h2>Mahmoud Ehab</h2>
+				<p>I'm <span class="typed"
+						data-typed-items="Computer Engineer, System Admin, Linux Enthusiast, Freelancer"></span><span
+						class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
+						class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
 			</div>
-			<div class="project-card">
-				<h3><a href="https://github.com/AbuTaha7000D" target="_blank">More on GitHub</a></h3>
-				<p>Explore my other projects and contributions.</p>
+
+		</section><!-- /Hero Section -->
+
+		<!-- About Section -->
+		<section id="about" class="about section">
+
+			<!-- Section Title -->
+			<div class="container section-title" data-aos="fade-up">
+				<h2>About</h2>
+				<p>Recent Electrical Engineering graduate specializing in Computer & Control Engineering with hands-on
+					experience in system administration and automation. Successfully coordinated 25+ technical events
+					and mentored 200+ students with 95%+ satisfaction rates. Proficient in Python, Linux environments,
+					and cloud infrastructure with proven problem-solving abilities through machine learning projects and
+					professional internships.</p>
+			</div><!-- End Section Title -->
+
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+				<div class="row gy-4 justify-content-center">
+					<div class="col-lg-4">
+						<img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+					</div>
+					<div class="col-lg-8 content">
+						<h2>System Admin &amp; Linux Enthusiast.</h2>
+						<p class="fst-italic py-3">
+							As a dedicated System Administrator and a true Linux enthusiast, I find joy in the elegance
+							and power of open-source technologies. My goal is to leverage my skills to create efficient,
+							secure, and resilient systems.
+						</p>
+						<div class="row">
+							<div class="col-lg-6">
+								<ul>
+									<li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>27 Nov
+											2001</span></li>
+									<li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
+										<span>abutaha7000d.github.io/portfolio/</span>
+									</li>
+									<li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+20 10
+											97998754</span></li>
+									<li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Port Said,
+											Egypt</span></li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul>
+									<li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
+									<li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
+										<span>Bachelor's</span>
+									</li>
+									<li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+										<span>eng.mahmoud.e.hussein@gmail.com</span>
+									</li>
+									<li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
+										<span>Available</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<p class="py-3">
+							My experience ranges from scripting and automation with Bash and Python to managing cloud
+							infrastructure. I believe in a proactive approach, focusing on preventing issues before they
+							arise. I'm constantly exploring new technologies to refine my skills and deliver exceptional
+							results.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</section><!-- /About Section -->
+
+		<!-- Skills Section -->
+		<section id="skills" class="skills section light-background">
+
+			<!-- Section Title -->
+			<div class="container section-title" data-aos="fade-up">
+				<h2>Skills</h2>
+				<p>I have a strong command of various programming languages, operating systems, and development tools. I
+					am particularly passionate about Linux environments, automation, and cloud technologies.</p>
+			</div><!-- End Section Title -->
+
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+				<div class="row skills-content skills-animation">
+
+					<div class="col-lg-6">
+
+						<div class="progress">
+							<span class="skill"><span>Python</span> <i class="val">95%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
+						</div><!-- End Skills Item -->
+
+						<div class="progress">
+							<span class="skill"><span>Linux</span> <i class="val">95%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
+						</div><!-- End Skills Item -->
+
+						<div class="progress">
+							<span class="skill"><span>Bash Scripting</span> <i class="val">90%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
+						</div><!-- End Skills Item -->
+
+					</div>
+
+					<div class="col-lg-6">
+						<div class="progress">
+							<span class="skill"><span>Docker</span> <i class="val">85%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
+						</div><!-- End Skills Item -->
+
+						<div class="progress">
+							<span class="skill"><span>Go</span> <i class="val">80%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
+						</div><!-- End Skills Item -->
+
+						<div class="progress">
+							<span class="skill"><span>Git/GitHub</span> <i class="val">90%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
+						</div><!-- End Skills Item -->
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section><!-- /Skills Section -->
+
+		<!-- Resume Section -->
+		<section id="resume" class="resume section">
+
+			<!-- Section Title -->
+			<div class="container section-title" data-aos="fade-up">
+				<h2>Resume</h2>
+				<p>Recent Electrical Engineering graduate specializing in Computer & Control Engineering with hands-on
+					experience in system administration and automation. Proficient in Python, Linux environments, and
+					cloud infrastructure with proven problem-solving abilities.</p>
+			</div><!-- End Section Title -->
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+						<h3 class="resume-title">Sumary</h3>
+
+						<div class="resume-item pb-0">
+							<h4>Mahmoud Ehab</h4>
+							<p><em>Successfully coordinated 25+ technical events and mentored 200+ students with 95%+
+									satisfaction rates. Proven problem-solving abilities through machine learning
+									projects and professional internships.</em></p>
+							<ul>
+								<li>Port Said, Egypt</li>
+								<li>(+20) 1097998754</li>
+								<li>eng.mahmoud.e.hussein@gmail.com</li>
+							</ul>
+						</div><!-- Edn Resume Item -->
+
+						<h3 class="resume-title">Education</h3>
+						<div class="resume-item">
+							<h4>Bachelor’s Degree in Electrical Engineering</h4>
+							<h5>2020 - 2025</h5>
+							<p><em>Port Said University, Faculty of Engineering, Port Said, Egypt</em></p>
+							<p>Specialization in Computer & Control Engineering.</p>
+						</div><!-- Edn Resume Item -->
+
+						<h3 class="resume-title">Certifications & Training</h3>
+						<div class="resume-item">
+							<h4>Cybersecurity Internship</h4>
+							<h5>2024</h5>
+							<p><em>Information Technology Institute (ITI)</em></p>
+						</div><!-- Edn Resume Item -->
+						<div class="resume-item">
+							<h4>Cloud and Virtualization Fundamentals</h4>
+							<h5>2024</h5>
+							<p><em>Mahara-Tech</em></p>
+						</div><!-- Edn Resume Item -->
+
+					</div>
+
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+						<h3 class="resume-title">Professional Experience</h3>
+						<div class="resume-item">
+							<h4>Site Coordinator</h4>
+							<h5>Feb 2024 – Jul 2025</h5>
+							<p><em>Almentor Egypt, Cairo, Egypt</em></p>
+							<ul>
+								<li>Coordinated and managed offline learning sessions ensuring 95%+ participant
+									satisfaction.</li>
+								<li>Oversaw event logistics, technical infrastructure, and on-site support for 25+
+									participants per session.</li>
+								<li>Provided technical guidance and academic support to students, reducing technical
+									issues.</li>
+							</ul>
+						</div><!-- Edn Resume Item -->
+
+						<div class="resume-item">
+							<h4>Software Engineer Intern</h4>
+							<h5>Jun 2023 – Dec 2023</h5>
+							<p><em>ALX Africa, Remote</em></p>
+							<ul>
+								<li>Developed and implemented various software solutions.</li>
+								<li>Contributed to the implementation of new projects from conception to deployment.
+								</li>
+								<li>Collaborated with colleagues to set plans and strategies for ongoing projects.</li>
+							</ul>
+						</div><!-- Edn Resume Item -->
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section><!-- /Resume Section -->
+
+		<!-- Projects Section -->
+		<section id="projects" class="projects-list section light-background">
+
+			<!-- Section Title -->
+			<div class="container section-title" data-aos="fade-up">
+				<h2>Projects</h2>
+				<p>Here are some of the projects I've worked on, showcasing my skills in application development,
+					machine learning, and system automation. Each project reflects my dedication to creating practical
+					and efficient solutions.</p>
+			</div><!-- End Section Title -->
+
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
+				<div class="project-card">
+					<h3><a href="https://github.com/ZingerEngineer/snack_n_track" target="_blank">Snack n' Track</a>
+					</h3>
+					<p>An AI-powered nutrition tracking mobile application developed for my graduation project.</p>
+				</div>
+				<div class="project-card">
+					<h3><a href="https://github.com/AbuTaha7000D/linux-postinstall" target="_blank">Linux Post-install
+							Script</a></h3>
+					<p>A comprehensive Bash automation script for configuring Linux systems after a fresh install.</p>
+				</div>
+
+			</div>
+
+		</section><!-- /Projects Section -->
+
+		<!-- Contact Section -->
+		<section id="contact" class="contact section">
+
+			<!-- Section Title -->
+			<div class="container section-title" data-aos="fade-up">
+				<h2>Contact</h2>
+				<p>Feel free to reach out to me for any inquiries, collaborations, or opportunities. I'm always open to
+					discussing new projects and ideas.</p>
+			</div><!-- End Section Title -->
+
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+				<div class="row gy-4">
+
+					<div class="col-lg-5">
+
+						<div class="info-wrap">
+							<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+								<i class="bi bi-geo-alt flex-shrink-0"></i>
+								<div>
+									<h3>Address</h3>
+									<p>Port Said, 42541, Egypt</p>
+								</div>
+							</div><!-- End Info Item -->
+
+							<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+								<i class="bi bi-telephone flex-shrink-0"></i>
+								<div>
+									<h3>Call Us</h3>
+									<p>+20 109 799 8754</p>
+								</div>
+							</div><!-- End Info Item -->
+
+							<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+								<i class="bi bi-envelope flex-shrink-0"></i>
+								<div>
+									<h3>Email Us</h3>
+									<p>eng.mahmoud.e.hussein@gmail.com</p>
+								</div>
+							</div><!-- End Info Item -->
+
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54895.49539654339!2d32.25993324863281!3d31.255551900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f99c15a1551b49%3A0x753116f03e62484!2sPort%20Said%2C%20Port%20Said%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sus!4v1699302325358!5m2!1sen!2sus"
+								frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+								loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+
+					<div class="col-lg-7">
+						<form action="https://formspree.io/f/mzzjknob" method="post" class="php-email-form"
+							data-aos="fade-up" data-aos-delay="200">
+							<form action="https://formspree.io/f/mzzjknob" method="post" data-aos="fade-up"
+								data-aos-delay="200">
+								<div class="row gy-4">
+
+									<div class="col-md-6">
+										<label for="name-field" class="pb-2">Your Name</label>
+										<input type="text" name="name" id="name-field" class="form-control" required="">
+									</div>
+
+									<div class="col-md-6">
+										<label for="email-field" class="pb-2">Your Email</label>
+										<input type="email" class="form-control" name="email" id="email-field"
+											required="">
+									</div>
+
+									<div class="col-md-12">
+										<label for="subject-field" class="pb-2">Subject</label>
+										<input type="text" class="form-control" name="subject" id="subject-field"
+											required="">
+									</div>
+
+									<div class="col-md-12">
+										<label for="message-field" class="pb-2">Message</label>
+										<textarea class="form-control" name="message" rows="10" id="message-field"
+											required=""></textarea>
+									</div>
+
+									<div class="col-md-12 text-center">
+										<div class="loading">Loading</div>
+										<div class="error-message"></div>
+										<div class="sent-message">Your message has been sent. Thank you!</div>
+
+										<button type="submit">Send Message</button>
+									</div>
+
+								</div>
+							</form>
+					</div><!-- End Contact Form -->
+
+				</div>
+
+			</div>
+
+		</section><!-- /Contact Section -->
+
+	</main>
+
+	<footer id="footer" class="footer position-relative light-background">
+
+		<div class="container">
+			<div class="copyright text-center">
+				<p>© Copyright <strong><span>Mahmoud Ehab</span></strong>. All Rights Reserved</p>
+				<!-- All the links in the footer should remain intact. -->
+				<!-- You can delete the links only if you've purchased the pro version. -->
+				<!-- Licensing information: https://bootstrapmade.com/license/ -->
+				Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
 			</div>
 		</div>
-	</section>
 
-
-	<section id="contact" class="container">
-		<h2>Get in Touch</h2>
-		<p>Connect with me on:</p>
-		<div class="social-icons">
-			<a href="https://linkedin.com/in/abutaha7000d" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a href="https://github.com/AbuTaha7000D" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="mailto:eng.mahmoud.e.hussein@gmail.com"><i class="fas fa-envelope"></i></a>
-			<a href="https://facebook.com/abutaha7000d" target="_blank"><i class="fab fa-facebook"></i></a>
-			<a href="https://t.me/AbuTaha7000D" target="_blank"><i class="fab fa-telegram"></i></a>
-		</div>
-		<p><a class="btn" href="assets/cv/Mahmoud_Ehab_CV.pdf" target="_blank">Download CV</a></p>
-	</section>
-
-	<footer>
-		<p>© 2025 Mahmoud Ehab. Built with ❤️ using HTML & CSS.</p>
 	</footer>
+
+	<!-- Scroll Top -->
+	<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Preloader -->
+	<div id="preloader"></div>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+	<script src="assets/vendor/typed.js/typed.umd.js"></script>
+	<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+	<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Main JS File -->
+	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
