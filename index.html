@@ -62,13 +62,32 @@
 					class="bi bi-linkedin"></i></a>
 		</div>
 
+		<div class="sidebar-footer">
+			<button class="sidebar-btn theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+				<i class="bi bi-moon"></i>
+			</button>
+			<button class="sidebar-btn lang-toggle" id="lang-toggle" aria-label="Switch Language">
+				EN
+			</button>
+		</div>
+
+
 		<nav id="navmenu" class="navmenu">
 			<ul>
-				<li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-				<li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-				<li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-				<li><a href="#projects"><i class="bi bi-images navicon"></i> Projects</a></li>
-				<li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+				<li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span
+							data-i18n="nav-home">Home</span></a></li>
+				<li><a href="#about"><i class="bi bi-person navicon"></i><span data-i18n="nav-about">About</span></a>
+				</li>
+				<li><a href="#experience"><i class="bi bi-briefcase navicon"></i><span
+							data-i18n="nav-experience">Experience</span></a></li>
+				<li><a href="#certifications"><i class="bi bi-award navicon"></i><span
+							data-i18n="nav-certifications">Certifications</span></a></li>
+				<li><a href="#volunteering"><i class="bi bi-heart navicon"></i><span
+							data-i18n="nav-volunteering">Volunteering</span></a></li>
+				<li><a href="#projects"><i class="bi bi-images navicon"></i><span
+							data-i18n="nav-projects">Projects</span></a></li>
+				<li><a href="#contact"><i class="bi bi-envelope navicon"></i><span
+							data-i18n="nav-contact">Contact</span></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -81,13 +100,14 @@
 			<img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 
 			<div class="container" data-aos="fade-up" data-aos-delay="100">
-				<h2>Mahmoud Ehab</h2>
-				<p>I'm <span class="typed"
+				<h2 data-i18n="hero-name">Mahmoud Ehab</h2>
+				<p><span data-i18n="hero-role-prefix">I'm </span><span class="typed"
 						data-typed-items="Computer Engineer, System Admin, Linux Enthusiast, Freelancer"></span><span
 						class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
 						class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
 				</p>
-				<a href="assets/cv/Mahmoud_Ehab_CV.pdf" class="btn btn-outline-light mt-3" download>Download my CV</a>
+				<a href="assets/cv/Mahmoud_Ehab_CV.pdf" class="btn btn-outline-light mt-3" download
+					data-i18n="btn-download-cv">Download my CV</a>
 			</div>
 
 		</section><!-- /Hero Section -->
@@ -97,8 +117,9 @@
 
 			<!-- Section Title -->
 			<div class="container section-title" data-aos="fade-up">
-				<h2>About</h2>
-				<p>Recent Electrical Engineering graduate specializing in Computer & Control Engineering with hands-on
+				<h2 data-i18n="about-title">About</h2>
+				<p data-i18n="about-desc">Recent Electrical Engineering graduate specializing in Computer & Control
+					Engineering with hands-on
 					experience in system administration and automation. Successfully coordinated 25+ technical events
 					and mentored 200+ students with 95%+ satisfaction rates. Proficient in Python, Linux environments,
 					and cloud infrastructure with proven problem-solving abilities through machine learning projects and
@@ -237,101 +258,249 @@
 
 		</section><!-- /Skills Section -->
 
-		<!-- Resume Section -->
-		<section id="resume" class="resume section">
+		<!-- Experience Section -->
+		<section id="experience" class="experience section">
 
 			<!-- Section Title -->
 			<div class="container section-title" data-aos="fade-up">
-				<h2>Resume</h2>
-				<p>Recent Electrical Engineering graduate specializing in Computer & Control Engineering with hands-on
-					experience in system administration and automation. Proficient in Python, Linux environments, and
-					cloud infrastructure with proven problem-solving abilities.</p>
+				<h2 data-i18n="experience-title">Work & Relevant Experience</h2>
+				<p data-i18n="experience-desc">My professional journey and hands-on experience in the field.</p>
 			</div><!-- End Section Title -->
 
-			<div class="container">
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
 
 				<div class="row">
-
-					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-						<h3 class="resume-title">Summary</h3>
-
-						<div class="resume-item pb-0">
-							<h4>Mahmoud Ehab Hussein Elsayed</h4>
-							<p><em>Successfully coordinated 25+ technical events and mentored 200+ students with 95%+
-									satisfaction rates. Proven problem-solving abilities through machine learning
-									projects and professional internships.</em></p>
+					<div class="col-lg-6">
+						<h3 class="resume-title" data-i18n="exp-professional-title">Professional Experience</h3>
+						<div class="resume-item">
+							<h4 data-i18n="site-coordinator-role">Site Coordinator</h4>
+							<h5 data-i18n="site-coordinator-date">Feb 2024 – Jul 2025</h5>
+							<p><em data-i18n="almentor-location">Almentor Egypt, Cairo, Egypt</em></p>
 							<ul>
-								<li>Port Said, Egypt</li>
-								<li>(+20) 1097998754</li>
-								<li>eng.mahmoud.e.hussein@gmail.com</li>
-							</ul>
-						</div><!-- Edn Resume Item -->
-
-						<h3 class="resume-title">Education</h3>
-						<div class="resume-item">
-							<h4>Bachelor’s Degree in Electrical Engineering</h4>
-							<h5>2020 - 2025</h5>
-							<p><em>Port Said University, Faculty of Engineering, Port Said, Egypt</em></p>
-							<p>Specialization in Computer & Control Engineering.</p>
-						</div><!-- Edn Resume Item -->
-
-						<h3 class="resume-title">Certifications & Training</h3>
-						<div class="resume-item">
-							<h4>Cybersecurity Internship</h4>
-							<h5>2024</h5>
-							<p><em>Information Technology Institute (ITI)</em></p>
-						</div><!-- Edn Resume Item -->
-						<div class="resume-item">
-							<h4>Cloud and Virtualization Fundamentals</h4>
-							<h5>2024</h5>
-							<p><em>Mahara-Tech</em></p>
-						</div><!-- Edn Resume Item -->
-
-					</div>
-
-					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-						<h3 class="resume-title">Professional Experience</h3>
-						<div class="resume-item">
-							<h4>Site Coordinator</h4>
-							<h5>Feb 2024 – Jul 2025</h5>
-							<p><em>Almentor Egypt, Cairo, Egypt</em></p>
-							<ul>
-								<li>Coordinated and managed offline learning sessions ensuring 95%+ participant
+								<li data-i18n="site-coordinator-desc-1">Coordinated and managed offline learning
+									sessions ensuring 95%+ participant
 									satisfaction.</li>
-								<li>Oversaw event logistics, technical infrastructure, and on-site support for 25+
+								<li data-i18n="site-coordinator-desc-2">Oversaw event logistics, technical
+									infrastructure, and on-site support for 25+
 									participants per session.</li>
-								<li>Provided technical guidance and academic support to students, reducing technical
+								<li data-i18n="site-coordinator-desc-3">Provided technical guidance and academic support
+									to students, reducing technical
 									issues.</li>
 							</ul>
-						</div><!-- Edn Resume Item -->
-
+						</div>
 						<div class="resume-item">
-							<h4>Software Engineer Intern</h4>
-							<h5>Jun 2023 – Dec 2023</h5>
-							<p><em>ALX Africa, Remote</em></p>
+							<h4 data-i18n="software-engineer-intern-role">Software Engineer Intern</h4>
+							<h5 data-i18n="software-engineer-intern-date">Jun 2023 – Dec 2023</h5>
+							<p><em data-i18n="alx-location">ALX Africa, Remote</em></p>
 							<ul>
-								<li>Developed and implemented various software solutions.</li>
-								<li>Contributed to the implementation of new projects from conception to deployment.
+								<li data-i18n="software-engineer-intern-desc-1">Developed and implemented various
+									software solutions.</li>
+								<li data-i18n="software-engineer-intern-desc-2">Contributed to the implementation of new
+									projects from conception to deployment.
 								</li>
-								<li>Collaborated with colleagues to set plans and strategies for ongoing projects.</li>
+								<li data-i18n="software-engineer-intern-desc-3">Collaborated with colleagues to set
+									plans and strategies for ongoing projects.</li>
 							</ul>
-						</div><!-- Edn Resume Item -->
-
+						</div>
 					</div>
-
+					<div class="col-lg-6">
+						<h3 class="resume-title" data-i18n="certifications-summary-title">Certifications & Training
+							(Summary)</h3>
+						<div class="resume-item">
+							<h4 data-i18n="cybersecurity-internship-role">Cybersecurity Internship</h4>
+							<h5 data-i18n="cybersecurity-internship-date">2024</h5>
+							<p><em data-i18n="iti-location">Information Technology Institute (ITI)</em></p>
+						</div>
+						<div class="resume-item">
+							<h4 data-i18n="cloud-role">Cloud and Virtualization Fundamentals</h4>
+							<h5 data-i18n="cloud-date">2024</h5>
+							<p><em data-i18n="mahara-location">Mahara-Tech</em></p>
+						</div>
+					</div>
 				</div>
 
 			</div>
 
-		</section><!-- /Resume Section -->
+		</section><!-- /Experience Section -->
+
+		<!-- Certifications Section -->
+		<section id="certifications" class="certifications section light-background">
+
+			<!-- Section Title -->
+			<div class="container section-title" data-aos="fade-up">
+				<h2 data-i18n="certifications-title">Certifications</h2>
+				<p data-i18n="certifications-desc">Continuous learning and professional development achievements.</p>
+			</div><!-- End Section Title -->
+
+			<div class="container">
+				<div class="row gy-4">
+
+					<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body">
+								<h5 class="card-title text-primary"><i
+										class="bi bi-patch-check-fill me-2"></i>Delivering Quality Work with Agility
+								</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i>IBM</h6>
+								<p class="card-text">Focused on agile methodologies and delivering high-quality software
+									solutions.</p>
+								<a href="https://coursera.org/share/2461bf23da6486c5d1f718aadd0694d1" target="_blank"
+									class="btn btn-sm btn-outline-primary stretched-link">View Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body">
+								<h5 class="card-title text-success"><i
+										class="bi bi-patch-check-fill me-2"></i>Networking & Tech Support</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-google me-1"></i>Google</h6>
+								<p class="card-text">Comprehensive training on networking fundamentals and technical
+									support.</p>
+								<a href="https://coursera.org/share/783939401861556bd8974a862352698a" target="_blank"
+									class="btn btn-sm btn-outline-primary stretched-link">View Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body">
+								<h5 class="card-title text-primary"><i class="bi bi-patch-check-fill me-2"></i>Cloud
+									Computing & Software Engineering</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i>IBM</h6>
+								<p class="card-text">In-depth exploration of cloud infrastructure and software
+									engineering practices.</p>
+								<a href="https://coursera.org/share/3e88a0644a632629afe0a69b8dabfb49" target="_blank"
+									class="btn btn-sm btn-outline-primary stretched-link">View Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i>Python
+									Bootcamp</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-code-square me-1"></i>Udemy
+								</h6>
+								<p class="card-text">Complete Python programming bootcamp covering zero to hero
+									concepts.</p>
+								<a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-c096f586-725a-4e04-a492-03a85c4c2d3d.pdf"
+									target="_blank" class="btn btn-sm btn-outline-primary stretched-link">View
+									Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body">
+								<h5 class="card-title text-info"><i
+										class="bi bi-patch-check-fill me-2"></i>Cybersecurity Internship</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-shield-lock me-1"></i>ITI</h6>
+								<p class="card-text">Intensive training and practical experience in cybersecurity.</p>
+								<a href="https://drive.google.com/file/d/1vxcQvdM-cv5TLM3trsrN98GRNMbVdzoi/view?usp=sharing"
+									target="_blank" class="btn btn-sm btn-outline-primary stretched-link">View
+									Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body">
+								<h5 class="card-title text-warning"><i class="bi bi-patch-check-fill me-2"></i>Ethical
+									Hacking & Network Security</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-motherboard me-1"></i>Mahara-Tech</h6>
+								<p class="card-text">Focus on ethical hacking techniques and securing network
+									infrastructures.</p>
+								<a href="https://drive.google.com/file/d/1T-SGW5yU8W1zOH8SzeUyjNAi3zH58o1P/view?usp=sharing"
+									target="_blank" class="btn btn-sm btn-outline-primary stretched-link">View
+									Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body">
+								<h5 class="card-title text-success"><i class="bi bi-patch-check-fill me-2"></i>Microsoft
+									Excel</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-microsoft me-1"></i>Coursera
+								</h6>
+								<p class="card-text">Advanced Excel skills for data analysis and management.</p>
+								<a href="https://coursera.org/share/a9b23b12c5fd9c978cce4b9f9edd0d0a" target="_blank"
+									class="btn btn-sm btn-outline-primary stretched-link">View Certificate</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section><!-- /Certifications Section -->
+
+		<!-- Volunteering Section -->
+		<section id="volunteering" class="volunteering section">
+
+			<!-- Section Title -->
+			<div class="container section-title" data-aos="fade-up">
+				<h2 data-i18n="volunteering-title">Volunteering Experience</h2>
+				<p data-i18n="volunteering-desc">Giving back to the community and mentoring the next generation.</p>
+			</div><!-- End Section Title -->
+
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+				<div class="row content justify-content-center">
+					<div class="col-lg-10">
+						<div class="accordion" id="volunteeringAccordion">
+							<div class="accordion-item shadow-sm border-0 mb-3">
+								<h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										<i class="bi bi-people-fill me-2 text-primary"></i> <strong
+											data-i18n="student-mentor-title">Student Mentor &
+											Technical Coordinator</strong>
+									</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse show"
+									aria-labelledby="headingOne" data-bs-parent="#volunteeringAccordion">
+									<div class="accordion-body">
+										<p><strong data-i18n="organization-label">Organization:</strong> <span
+												data-i18n="student-activities">Various Student Activities</span></p>
+										<ul>
+											<li data-i18n="mentoring-desc-1">Mentored 200+ students in technical
+												workshops, achieving a 95%+
+												satisfaction rate.</li>
+											<li data-i18n="mentoring-desc-2">Coordinated 25+ technical events, managing
+												logistics and technical
+												support.</li>
+											<li data-i18n="mentoring-desc-3">Fostered a collaborative learning
+												environment for aspiring engineers.
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section><!-- /Volunteering Section -->
 
 		<!-- Projects Section -->
 		<section id="projects" class="projects-list section light-background">
 
 			<!-- Section Title -->
 			<div class="container section-title" data-aos="fade-up">
-				<h2>Projects</h2>
-				<p>Here are some of the projects I've worked on, showcasing my skills in application development,
+				<h2 data-i18n="projects-title">Projects</h2>
+				<p data-i18n="projects-desc">Here are some of the projects I've worked on, showcasing my skills in
+					application development,
 					machine learning, and system automation. Each project reflects my dedication to creating practical
 					and efficient solutions.</p>
 			</div><!-- End Section Title -->
@@ -340,14 +509,15 @@
 				<div class="project-card">
 					<h3><a href="https://github.com/ZingerEngineer/snack_n_track" target="_blank">Snack n' Track</a>
 					</h3>
-					<p>An AI-powered nutrition tracking mobile application developed for my graduation project.</p>
+					<p data-i18n="project-snack-desc">An AI-powered nutrition tracking mobile application developed for
+						my graduation project.</p>
 				</div>
 				<div class="project-card">
 					<h3><a href="https://github.com/AbuTaha7000D/linux-postinstall" target="_blank">Linux Post-install
 							Script</a></h3>
-					<p>A comprehensive Bash automation script for configuring Linux systems after a fresh install.</p>
+					<p data-i18n="project-linux-desc">A comprehensive Bash automation script for configuring Linux
+						systems after a fresh install.</p>
 				</div>
-
 			</div>
 
 		</section><!-- /Projects Section -->
@@ -357,8 +527,9 @@
 
 			<!-- Section Title -->
 			<div class="container section-title" data-aos="fade-up">
-				<h2>Contact</h2>
-				<p>Feel free to reach out to me for any inquiries, collaborations, or opportunities. I'm always open to
+				<h2 data-i18n="contact-title">Contact</h2>
+				<p data-i18n="contact-desc">Feel free to reach out to me for any inquiries, collaborations, or
+					opportunities. I'm always open to
 					discussing new projects and ideas.</p>
 			</div><!-- End Section Title -->
 
@@ -372,15 +543,15 @@
 							<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
 								<i class="bi bi-geo-alt flex-shrink-0"></i>
 								<div>
-									<h3>Address</h3>
-									<p>Port Said, 42541, Egypt</p>
+									<h3 data-i18n="address-label">Address</h3>
+									<p data-i18n="address-value">Port Said, 42541, Egypt</p>
 								</div>
 							</div><!-- End Info Item -->
 
 							<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
 								<i class="bi bi-telephone flex-shrink-0"></i>
 								<div>
-									<h3>Call Me</h3>
+									<h3 data-i18n="call-label">Call Me</h3>
 									<p>+20 109 799 8754</p>
 								</div>
 							</div><!-- End Info Item -->
@@ -388,7 +559,7 @@
 							<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
 								<i class="bi bi-envelope flex-shrink-0"></i>
 								<div>
-									<h3>Email Me</h3>
+									<h3 data-i18n="email-label">Email Me</h3>
 									<p>eng.mahmoud.e.hussein@gmail.com</p>
 								</div>
 							</div><!-- End Info Item -->
@@ -407,23 +578,26 @@
 							<div class="row gy-4">
 
 								<div class="col-md-6">
-									<label for="name-field" class="pb-2">Your Name</label>
+									<label for="name-field" class="pb-2" data-i18n="form-name-label">Your Name</label>
 									<input type="text" name="name" id="name-field" class="form-control" required="">
 								</div>
 
 								<div class="col-md-6">
-									<label for="email-field" class="pb-2">Your Email</label>
+									<label for="email-field" class="pb-2" data-i18n="form-email-label">Your
+										Email</label>
 									<input type="email" class="form-control" name="email" id="email-field" required="">
 								</div>
 
 								<div class="col-md-12">
-									<label for="subject-field" class="pb-2">Subject</label>
+									<label for="subject-field" class="pb-2"
+										data-i18n="form-subject-label">Subject</label>
 									<input type="text" class="form-control" name="subject" id="subject-field"
 										required="">
 								</div>
 
 								<div class="col-md-12">
-									<label for="message-field" class="pb-2">Message</label>
+									<label for="message-field" class="pb-2"
+										data-i18n="form-message-label">Message</label>
 									<textarea class="form-control" name="message" rows="10" id="message-field"
 										required=""></textarea>
 								</div>
@@ -433,7 +607,7 @@
 									<div class="error-message"></div>
 									<div class="sent-message">Your message has been sent. Thank you!</div>
 
-									<button type="submit">Send Message</button>
+									<button type="submit" data-i18n="form-send-btn">Send Message</button>
 								</div>
 
 							</div>
@@ -452,8 +626,10 @@
 
 		<div class="container">
 			<div class="copyright text-center">
-				<p>© Copyright <span id="copyright-year"></span> <strong><span>Mahmoud Ehab</span></strong>. All Rights
-					Reserved</p>
+				<p>© <span data-i18n="copyright-text">Copyright</span> <span id="copyright-year"></span> <strong><span
+							data-i18n="footer-name">Mahmoud Ehab</span></strong>. <span data-i18n="rights-reserved">All
+						Rights
+						Reserved</span></p>
 				<!-- All the links in the footer should remain intact. -->
 				<!-- You can delete the links only if you've purchased the pro version. -->
 				<!-- Licensing information: https://bootstrapmade.com/license/ -->
