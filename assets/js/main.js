@@ -485,7 +485,7 @@ let typedInstance = null;
 			"copyright-text": "حقوق النشر",
 			"footer-name": "محمود ايهاب",
 			"rights-reserved": "جميع الحقوق محفوظة",
-			"typed-items": "مهندس دعم فني,مهندس حاسب,مهندس شبكات,محلل مشاكل تقنية"
+			"typed-items": "مهندس دعم فني,مهندس شبكات,محلل مشاكل تقنية"
 		}
 	};
 
