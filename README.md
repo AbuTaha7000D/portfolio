@@ -13,7 +13,13 @@ A personal portfolio website showcasing my experience, projects, and certificati
 - JavaScript
 
 ## Preview
-You can view the live site at: [https://abutaha7000d.github.io/portfolio/](https://abutaha7000d.github.io/portfolio/)
+You can view the live site at:  
+👉 https://abutaha7000d.github.io/portfolio/
+
+## Credits
+- Original template by **BootstrapMade**
+- Customized and developed by **Mahmoud Ehab**
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is based on a free BootstrapMade template.  
+Please refer to BootstrapMade’s license terms for template usage.
