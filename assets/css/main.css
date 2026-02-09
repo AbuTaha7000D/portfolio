@@ -868,7 +868,8 @@ section,
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
-.projects-list .project-card {
+.projects-list .project-card,
+.volunteering .volunteering-card {
 	background-color: var(--surface-color);
 	border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 	padding: 20px;
@@ -877,18 +878,21 @@ section,
 	transition: all 0.3s ease-in-out;
 }
 
-.projects-list .project-card:hover {
+.projects-list .project-card:hover,
+.volunteering .volunteering-card:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-.projects-list .project-card h3 {
+.projects-list .project-card h3,
+.volunteering .volunteering-card h3 {
 	font-size: 20px;
 	font-weight: 700;
 	margin-bottom: 5px;
 }
 
-.projects-list .project-card p {
+.projects-list .project-card p,
+.volunteering .volunteering-card p {
 	margin-bottom: 0;
 }
 
