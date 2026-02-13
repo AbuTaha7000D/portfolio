@@ -7,63 +7,78 @@
 */
 
 /*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
+# Brand palette (from hero-bg.jpg) + theme tokens
+# Charcoal: #2F3031 | Deep charcoal: #1a1b1c | Red: #E22B2B | Red hover: #c72525
+# Light: bg #fff, surface #fff, text #2F3031, border #e8e8e8, muted #5c5d5e
+# Dark:  bg #1a1b1c, surface #2F3031, text #fff, border #404040, muted #9ca3af
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
 
-/* Fonts */
+/* Font System - Inter (single font across the whole site) */
 :root {
-	--default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--heading-font: "Raleway", sans-serif;
-	--nav-font: "Poppins", sans-serif;
+	--font: "Inter", system-ui, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Theme: Light Mode (default) */
 :root {
+	--color-charcoal: #2F3031;
+	--color-charcoal-deep: #1a1b1c;
+	--color-red: #E22B2B;
+	--color-red-hover: #c72525;
+
 	--background-color: #ffffff;
-	/* Background color for the entire website, including individual sections */
-	--default-color: #272829;
-	/* Default color used for the majority of the text content across the entire website */
-	--heading-color: #050d18;
-	/* Color for headings, subheadings and title throughout the website */
-	--accent-color: #149ddd;
-	/* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+	--default-color: var(--color-charcoal);
+	--heading-color: var(--color-charcoal-deep);
+	--accent-color: var(--color-red);
 	--surface-color: #ffffff;
-	/* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
 	--contrast-color: #ffffff;
-	/* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+	--border-color: #e8e8e8;
+	--text-muted: #5c5d5e;
+	--shadow-color: rgba(0, 0, 0, 0.08);
+	--shadow-strong: rgba(0, 0, 0, 0.1);
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-	--nav-color: #a8a9b4;
-	/* The default color of the main navmenu links */
-	--nav-hover-color: #ffffff;
-	/* Applied to main navmenu links when they are hovered over or active */
-	--nav-mobile-background-color: #040b14;
-	/* Used as the background color for mobile navigation menu */
-	--nav-dropdown-background-color: #040b14;
-	/* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+	--nav-color: var(--text-muted);
+	--nav-hover-color: var(--heading-color);
+	--nav-mobile-background-color: var(--color-charcoal-deep);
+	--nav-dropdown-background-color: var(--color-charcoal-deep);
 	--nav-dropdown-color: #a8a9b4;
-	/* Used for navigation links of the dropdown items in the navigation menu. */
 	--nav-dropdown-hover-color: #ffffff;
-	/* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
-
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-	--background-color: #f4fafd;
+	--background-color: #fafafa;
 	--surface-color: #ffffff;
 }
 
 .dark-background {
-	--background-color: #040b14;
+	--background-color: var(--color-charcoal-deep);
 	--default-color: #ffffff;
 	--heading-color: #ffffff;
-	--surface-color: #151f2b;
+	--surface-color: var(--color-charcoal);
 	--contrast-color: #ffffff;
+	--border-color: #404040;
+	--text-muted: #9ca3af;
+	--shadow-color: rgba(0, 0, 0, 0.2);
+	--shadow-strong: rgba(0, 0, 0, 0.25);
+}
+
+/* Theme: Dark Mode (body.dark-mode) */
+body.dark-mode {
+	--background-color: var(--color-charcoal-deep);
+	--default-color: #ffffff;
+	--heading-color: #ffffff;
+	--surface-color: var(--color-charcoal);
+	--contrast-color: #ffffff;
+	--border-color: #404040;
+	--text-muted: #9ca3af;
+	--shadow-color: rgba(0, 0, 0, 0.3);
+	--shadow-strong: rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .light-background {
+	--background-color: var(--color-charcoal);
+	--surface-color: #3d3e40;
 }
 
 /* Smooth scroll */
@@ -77,7 +92,10 @@
 body {
 	color: var(--default-color);
 	background-color: var(--background-color);
-	font-family: var(--default-font);
+	font-family: var(--font);
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 1rem;
 }
 
 a {
@@ -87,7 +105,7 @@ a {
 }
 
 a:hover {
-	color: color-mix(in srgb, var(--accent-color), transparent 25%);
+	color: var(--color-red-hover);
 	text-decoration: none;
 }
 
@@ -98,7 +116,34 @@ h4,
 h5,
 h6 {
 	color: var(--heading-color);
-	font-family: var(--heading-font);
+	font-family: var(--font);
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 1.125rem;
+}
+
+h6 {
+	font-size: 1rem;
 }
 
 /* PHP Email Form Messages
@@ -168,14 +213,14 @@ h6 {
 	transition: all ease-in-out 0.3s;
 	overflow-y: auto;
 	z-index: 997;
-	border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+	border-right: 1px solid var(--border-color);
 }
 
 .header .profile-img img {
 	margin: 15px auto;
 	display: block;
 	width: 120px;
-	border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+	border: 8px solid var(--border-color);
 }
 
 .header .logo {
@@ -204,7 +249,7 @@ h6 {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	background: color-mix(in srgb, var(--default-color), transparent 90%);
+	background: color-mix(in srgb, var(--default-color) 12%, transparent);
 	color: var(--default-color);
 	margin: 0 2px;
 	border-radius: 50%;
@@ -257,7 +302,7 @@ h6 {
 
 .header .header-toggle:hover {
 	color: var(--contrast-color);
-	background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+	background-color: var(--color-red-hover);
 }
 
 /*--------------------------------------------------------------
@@ -282,8 +327,8 @@ h6 {
 .navmenu a:focus {
 	color: var(--nav-color);
 	padding: 15px 10px;
-	font-family: var(--nav-font);
-	font-size: 16px;
+	font-family: var(--font);
+	font-size: 1rem;
 	font-weight: 400;
 	display: flex;
 	align-items: center;
@@ -339,13 +384,46 @@ h6 {
 	transform: rotate(180deg);
 }
 
+/*--------------------------------------------------------------
+# Sidebar (header) only: white text, red icons, red text on hover/active
+--------------------------------------------------------------*/
+.header .navmenu a,
+.header .navmenu a:focus {
+	color: #ffffff;
+}
+
+.header .navmenu a:hover,
+.header .navmenu .active,
+.header .navmenu .active:focus {
+	color: var(--accent-color);
+}
+
+.header .navmenu a .navicon,
+.header .navmenu a:focus .navicon,
+.header .navmenu a:hover .navicon,
+.header .navmenu .active .navicon,
+.header .navmenu .active:focus .navicon {
+	color: var(--accent-color);
+}
+
+.header .navmenu .dropdown a,
+.header .navmenu .dropdown a:focus {
+	color: #ffffff;
+}
+
+.header .navmenu .dropdown a:hover,
+.header .navmenu .dropdown .active,
+.header .navmenu .dropdown .active:focus {
+	color: var(--accent-color);
+}
+
 .navmenu .dropdown {
 	display: block;
 }
 
 .navmenu .dropdown a,
 .navmenu .dropdown a:focus {
-	color: --nav-dropdown-color;
+	color: var(--nav-dropdown-color);
 }
 
 .navmenu .dropdown a:hover,
@@ -361,18 +439,18 @@ h6 {
 	padding: 5px 10px;
 	margin: 5px 10px;
 	background-color: var(--nav-dropdown-background-color);
-	border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+	border: 1px solid var(--border-color);
 	box-shadow: none;
 	transition: all 0.5s ease-in-out;
 }
 
 .navmenu .dropdown ul ul {
-	background-color: rgba(33, 37, 41, 0.1);
+	background-color: color-mix(in srgb, var(--default-color) 8%, transparent);
 }
 
 .navmenu .dropdown>.dropdown-active {
 	display: block;
-	background-color: rgba(33, 37, 41, 0.03);
+	background-color: color-mix(in srgb, var(--default-color) 4%, transparent);
 }
 
 /*--------------------------------------------------------------
@@ -384,7 +462,7 @@ h6 {
 	font-size: 14px;
 	padding: 40px 0;
 	position: relative;
-	border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+	border-top: 1px solid var(--border-color);
 }
 
 .footer .copyright p {
@@ -414,7 +492,7 @@ h6 {
 	position: fixed;
 	top: calc(50% - 30px);
 	left: calc(50% - 30px);
-	border: 6px solid #ffffff;
+	border: 6px solid var(--surface-color);
 	border-color: var(--accent-color) transparent var(--accent-color) transparent;
 	border-radius: 50%;
 	width: 60px;
@@ -456,7 +534,7 @@ h6 {
 }
 
 .scroll-top:hover {
-	background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+	background-color: var(--color-red-hover);
 	color: var(--contrast-color);
 }
 
@@ -497,8 +575,8 @@ section,
 }
 
 .section-title h2 {
-	font-size: 32px;
-	font-weight: 700;
+	font-size: 2rem;
+	font-weight: 600;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	position: relative;
@@ -517,6 +595,9 @@ section,
 
 .section-title p {
 	margin-bottom: 0;
+	font-size: 1rem;
+	line-height: 1.6;
+	color: var(--default-color);
 }
 
 /*--------------------------------------------------------------
@@ -557,13 +638,15 @@ section,
 
 .hero h2 {
 	margin: 0;
-	font-size: 64px;
+	font-size: clamp(2.5rem, 5vw, 4rem);
 	font-weight: 700;
+	line-height: 1.2;
 }
 
 .hero p {
 	margin: 5px 0 0 0;
-	font-size: 26px;
+	font-size: 1.375rem;
+	line-height: 1.5;
 }
 
 .hero p span {
@@ -578,7 +661,7 @@ section,
 .hero .social-links a {
 	font-size: 24px;
 	display: inline-block;
-	color: color-mix(in srgb, var(--default-color), transparent 50%);
+	color: var(--text-muted);
 	line-height: 1;
 	margin-right: 20px;
 	transition: 0.3s;
@@ -609,7 +692,7 @@ section,
 	font-size: 28px;
 	line-height: 1;
 	margin-bottom: 8px;
-	color: color-mix(in srgb, var(--default-color), transparent 50%);
+	color: var(--text-muted);
 	transition: 0.3s;
 }
 
@@ -728,7 +811,7 @@ section,
 --------------------------------------------------------------*/
 .contact .info-wrap {
 	background-color: var(--surface-color);
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 20px var(--shadow-strong);
 	padding: 30px;
 }
 
@@ -778,7 +861,7 @@ section,
 	background-color: var(--surface-color);
 	height: 100%;
 	padding: 30px;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 20px var(--shadow-strong);
 }
 
 @media (max-width: 575px) {
@@ -790,13 +873,13 @@ section,
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
-	font-size: 14px;
+	font-size: 0.875rem;
 	padding: 10px 15px;
 	box-shadow: none;
 	border-radius: 0;
 	color: var(--default-color);
 	background-color: var(--surface-color);
-	border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+	border: 1px solid var(--border-color);
 }
 
 .contact .php-email-form input[type=text]:focus,
@@ -808,7 +891,7 @@ section,
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-	color: color-mix(in srgb, var(--default-color), transparent 70%);
+	color: var(--text-muted);
 }
 
 .contact .php-email-form button[type=submit] {
@@ -821,7 +904,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-	background: color-mix(in srgb, var(--accent-color), transparent 25%);
+	background: var(--color-red-hover);
 }
 
 /*--------------------------------------------------------------
@@ -837,7 +920,7 @@ section,
 .projects-list .project-card,
 .volunteering .volunteering-card {
 	background-color: var(--surface-color);
-	border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+	border: 1px solid var(--border-color);
 	padding: 20px;
 	margin-bottom: 20px;
 	border-radius: 8px;
@@ -847,7 +930,7 @@ section,
 .projects-list .project-card:hover,
 .volunteering .volunteering-card:hover {
 	transform: translateY(-5px);
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 4px 15px var(--shadow-color);
 }
 
 .projects-list .project-card h3,
@@ -870,28 +953,28 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Dark Mode
+# Dark Mode - Component overrides (theme variables set at top)
 --------------------------------------------------------------*/
-body.dark-mode {
-	--background-color: #040b14;
-	--default-color: #ffffff;
-	--heading-color: #ffffff;
-	--surface-color: #151f2b;
-	--contrast-color: #ffffff;
-}
-
-body.dark-mode .light-background {
-	--background-color: #151f2b;
-	--surface-color: #2c3e50;
-}
-
 body.dark-mode .card {
 	background-color: var(--surface-color);
 	color: var(--default-color);
+	border-color: var(--border-color);
 }
 
 body.dark-mode .card-subtitle {
-	color: #adb5bd !important;
+	color: var(--text-muted) !important;
+}
+
+/* Bootstrap overrides - use theme accent for primary/outline buttons */
+.btn-outline-primary {
+	border-color: var(--accent-color);
+	color: var(--accent-color);
+}
+
+.btn-outline-primary:hover {
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+	color: var(--contrast-color);
 }
 
 /* Smooth transition for theme switch */
@@ -903,10 +986,10 @@ body,
 }
 
 /*--------------------------------------------------------------
-# RTL Support
+# RTL Support (same font system)
 --------------------------------------------------------------*/
 [dir="rtl"] {
-	font-family: 'Cairo', sans-serif;
+	font-family: var(--font);
 	text-align: right;
 }
 
@@ -916,13 +999,13 @@ body,
 [dir="rtl"] h4,
 [dir="rtl"] h5,
 [dir="rtl"] h6 {
-	font-family: 'Cairo', sans-serif;
+	font-family: var(--font);
 }
 
 /* Sidebar Positioning in RTL */
 [dir="rtl"] .header {
 	border-right: none;
-	border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+	border-left: 1px solid var(--border-color);
 	left: auto;
 	right: 0;
 }
@@ -1005,7 +1088,7 @@ body,
 }
 
 .sidebar-btn {
-	background: color-mix(in srgb, var(--default-color), transparent 90%);
+	background: color-mix(in srgb, var(--default-color) 12%, transparent);
 	color: var(--default-color);
 	border: none;
 	border-radius: 50%;
