@@ -151,6 +151,40 @@ let typedInstance = null;
 	window.addEventListener('load', navmenuScrollspy);
 	document.addEventListener('scroll', navmenuScrollspy);
 
+	/**
+	 * Certification Filter
+	 */
+	const certFilters = document.querySelectorAll('#cert-filters li');
+	const certItems = document.querySelectorAll('.cert-item');
+
+	if (certFilters.length > 0 && certItems.length > 0) {
+		certFilters.forEach(filter => {
+			filter.addEventListener('click', function () {
+				// Remove active class from all filters
+				certFilters.forEach(f => f.classList.remove('filter-active'));
+				// Add active class to clicked filter
+				this.classList.add('filter-active');
+
+				const selectedFilter = this.getAttribute('data-filter');
+
+				certItems.forEach(item => {
+					if (selectedFilter === '*' || item.classList.contains(selectedFilter.substring(1))) {
+						item.classList.remove('filter-hidden');
+						item.classList.add('filter-show');
+					} else {
+						item.classList.remove('filter-show');
+						item.classList.add('filter-hidden');
+					}
+				});
+
+				// Refresh AOS to handle visibility changes
+				if (typeof AOS !== 'undefined') {
+					AOS.refresh();
+				}
+			});
+		});
+	}
+
 })();
 (function () {
 	"use strict";
@@ -214,48 +248,47 @@ let typedInstance = null;
 			"training-ibm-date": "Dec 2025 – Present",
 			"training-ibm-summary": "Comprehensive training in full-stack development, cloud-native applications, and software engineering principles using modern frameworks and tools. (Currently in progress)",
 			"certifications-title": "Certifications",
+			"cert-filter-all": "All",
+			"cert-filter-it": "IT",
+			"cert-filter-software": "Software",
+			"cert-filter-professional": "Professional",
+			"cert-view-btn": "View Certificate",
+			"cert-ibm-inst": "IBM",
+			"cert-coursera-inst": "Coursera",
 			"cert-ibm-cloud": "Introduction to Cloud Computing",
-			"cert-ibm-cloud-inst": "IBM",
 			"cert-ibm-cloud-desc": "Foundational concepts of cloud computing, service models, and infrastructure.",
 			"cert-ibm-webdev": "Introduction to Web Development with HTML, CSS, JavaScript",
-			"cert-ibm-webdev-inst": "IBM",
 			"cert-ibm-webdev-desc": "Core web development concepts including HTML5, CSS3, and JavaScript programming.",
 			"cert-ibm-software": "Introduction to Software Engineering",
-			"cert-ibm-software-inst": "IBM",
 			"cert-ibm-software-desc": "Overview of software engineering principles, SDLC, and agile methodologies.",
-			"cert-udemy-python": "The Python Programming Comprehensive Bootcamp",
-			"cert-udemy-python-inst": "Udemy",
-			"cert-udemy-python-desc": "In-depth Python programming including automation, data analysis, and web development.",
+			"cert-ibm-html": "Introduction to HTML, CSS, & JavaScript",
+			"cert-ibm-html-desc": "Foundational skills for web development using HTML, CSS, and basic JavaScript.",
+			"cert-ibm-git": "Getting Started with Git and GitHub",
+			"cert-ibm-git-desc": "Essential skills for version control using Git and collaborative development on GitHub.",
+			"cert-ibm-python-ds": "Python for Data Science, AI & Development",
+			"cert-ibm-python-ds-desc": "Introduction to Python programming principles and its applications in data science and AI.",
+			"cert-ibm-flask": "Developing AI Applications with Python and Flask",
+			"cert-ibm-flask-desc": "Building and deploying AI-powered web applications using Python and the Flask framework.",
+			"cert-ibm-agility": "Delivering Quality Work with Agility",
+			"cert-ibm-agility-desc": "Principles of Agile methodology and techniques for delivering high-quality work efficiently.",
 			"cert-iti-cyber": "Cybersecurity Internship",
-			"cert-iti-cyber-inst": "Information Technology Institute (ITI)",
 			"cert-iti-cyber-desc": "Practical training in cybersecurity fundamentals, threat analysis, and protection.",
 			"cert-mahara-cloud": "Cloud & Virtualization",
-			"cert-mahara-cloud-inst": "Mahara-Tech",
 			"cert-mahara-cloud-desc": "Core concepts of virtualization technologies and cloud deployment models.",
-			"cert-mahara-db": "Database Fundamentals",
-			"cert-mahara-db-inst": "Mahara-Tech",
-			"cert-mahara-db-desc": "Relational database concepts, SQL, and database management basics.",
 			"cert-mahara-net": "Computer Network Fundamentals",
-			"cert-mahara-net-inst": "Mahara-Tech",
 			"cert-mahara-net-desc": "Networking basics including OSI model, protocols, and network hardware.",
 			"cert-mahara-hacking": "Ethical Hacking",
-			"cert-mahara-hacking-inst": "Mahara-Tech",
 			"cert-mahara-hacking-desc": "Techniques for identifying and addressing security vulnerabilities ethically.",
 			"cert-mahara-sec": "Introduction to Network Security",
-			"cert-mahara-sec-inst": "Mahara-Tech",
 			"cert-mahara-sec-desc": "Foundations of securing network infrastructures and data protection.",
-			"cert-excel-1": "Microsoft Excel I",
-			"cert-excel-1-inst": "Coursera",
-			"cert-excel-1-desc": "Fundamental Excel skills, formulas, and data visualization techniques.",
-			"cert-excel-2": "Microsoft Excel II",
-			"cert-excel-2-inst": "Coursera",
-			"cert-excel-2-desc": "Advanced data management, complex formulas, and analytical tools in Excel.",
+			"cert-excel": "Microsoft Excel",
+			"cert-excel-desc": "Comprehensive Excel skills for data management, analysis, and visualization.",
 			"cert-google-net": "The Bits and Bytes of Computer Networking",
-			"cert-google-net-inst": "Google",
 			"cert-google-net-desc": "Foundations of networking, including the TCP/IP model, networking protocols, and infrastructure.",
 			"cert-google-support": "Technical Support Fundamentals",
-			"cert-google-support-inst": "Google",
 			"cert-google-support-desc": "Key concepts of technical support, including troubleshooting, customer service, and systems administration.",
+			"cert-google-os": "Operating Systems and You: Becoming a Power User",
+			"cert-google-os-desc": "Fundamentals of operating systems, managing computer hardware, and utilizing utilities.",
 			"volunteering-title": "Volunteering Experience",
 			"vol-icpc-title": "46th & 47th International Collegiate Programming Contest (ICPC)",
 			"vol-icpc-date": "Apr 2024",
@@ -338,48 +371,47 @@ let typedInstance = null;
 			"training-ibm-date": "ديسمبر 2025 – مستمر",
 			"training-ibm-summary": "تدريب شامل على تطوير تطبيقات Full Stack والتطبيقات السحابية ومبادئ هندسة البرمجيات باستخدام أحدث الأطر والأدوات. (قيد الدراسة حالياً)",
 			"certifications-title": "الشهادات",
+			"cert-filter-all": "الكل",
+			"cert-filter-it": "تكنولوجيا المعلومات",
+			"cert-filter-software": "البرمجيات",
+			"cert-filter-professional": "احترافية",
+			"cert-view-btn": "عرض الشهادة",
+			"cert-ibm-inst": "IBM",
+			"cert-coursera-inst": "Coursera",
 			"cert-ibm-cloud": "مقدمة في الحوسبة السحابية",
-			"cert-ibm-cloud-inst": "IBM",
 			"cert-ibm-cloud-desc": "المفاهيم الأساسية للحوسبة السحابية، نماذج الخدمات، والبنية التحتية.",
 			"cert-ibm-webdev": "مقدمة في تطوير الويب باستخدام HTML و CSS و JavaScript",
-			"cert-ibm-webdev-inst": "IBM",
 			"cert-ibm-webdev-desc": "المفاهيم الأساسية لتطوير الويب بما في ذلك HTML5 و CSS3 وبرمجة JavaScript.",
 			"cert-ibm-software": "مقدمة في هندسة البرمجيات",
-			"cert-ibm-software-inst": "IBM",
 			"cert-ibm-software-desc": "نظرة عامة على مبادئ هندسة البرمجيات، دورة حياة التطوير، ومنهجيات الأجايل.",
-			"cert-udemy-python": "معسكر تدريبي شامل لبرمجة بايثون",
-			"cert-udemy-python-inst": "Udemy",
-			"cert-udemy-python-desc": "برمجة بايثون متعمقة تشمل الأتمتة، تحليل البيانات، وتطوير الويب.",
+			"cert-ibm-html": "مقدمة في HTML و CSS و JavaScript",
+			"cert-ibm-html-desc": "المهارات الأساسية لتطوير الويب باستخدام HTML و CSS وأساسيات JavaScript.",
+			"cert-ibm-git": "بداية العمل مع Git و GitHub",
+			"cert-ibm-git-desc": "المهارات الأساسية للتحكم في الإصدار باستخدام Git والتطوير التعاوني على GitHub.",
+			"cert-ibm-python-ds": "بايثون لعلوم البيانات والذكاء الاصطناعي والتطوير",
+			"cert-ibm-python-ds-desc": "مقدمة لمبادئ برمجة بايثون وتطبيقاتها في علوم البيانات والذكاء الاصطناعي.",
+			"cert-ibm-flask": "تطوير تطبيقات الذاء الاصطناعي باستخدام بايثون وفلاسك",
+			"cert-ibm-flask-desc": "بناء ونشر تطبيقات ويب مدعومة بالذكاء الاصطناعي باستخدام بايثون وإطار عمل فلاسك.",
+			"cert-ibm-agility": "تقديم عمل عالي الجودة بمرونة (Agility)",
+			"cert-ibm-agility-desc": "مبادئ منهجية الأجايل وتقنيات تقديم عمل عالي الجودة بكفاءة.",
 			"cert-iti-cyber": "تدريب الأمن السيبراني",
-			"cert-iti-cyber-inst": "معهد تكنولوجيا المعلومات (ITI)",
 			"cert-iti-cyber-desc": "تدريب عملي على أساسيات الأمن السيبراني، تحليل التهديدات، والحماية.",
 			"cert-mahara-cloud": "الحوسبة السحابية والمحاكاة الافتراضية",
-			"cert-mahara-cloud-inst": "مهارة تك",
 			"cert-mahara-cloud-desc": "المفاهيم الأساسية لتقنيات المحاكاة الافتراضية ونماذج النشر السحابي.",
-			"cert-mahara-db": "أساسيات قواعد البيانات",
-			"cert-mahara-db-inst": "مهارة تك",
-			"cert-mahara-db-desc": "مفاهيم قواعد البيانات العلائقية، لغة SQL، وأساسيات إدارة قواعد البيانات.",
 			"cert-mahara-net": "أساسيات شبكات الحاسب",
-			"cert-mahara-net-inst": "مهارة تك",
 			"cert-mahara-net-desc": "أساسيات الشبكات بما في ذلك نموذج OSI، البروتوكولات، وأجهزة الشبكات.",
 			"cert-mahara-hacking": "الاختراق الأخلاقي",
-			"cert-mahara-hacking-inst": "مهارة تك",
 			"cert-mahara-hacking-desc": "تقنيات تحديد الثغرات الأمنية ومعالجتها بطرق أخلاقية.",
 			"cert-mahara-sec": "مقدمة في أمن الشبكات",
-			"cert-mahara-sec-inst": "مهارة تك",
 			"cert-mahara-sec-desc": "أساسيات تأمين البنية التحتية للشبكات وحماية البيانات.",
-			"cert-excel-1": "مايكروسوفت إكسل I",
-			"cert-excel-1-inst": "كورسيرا",
-			"cert-excel-1-desc": "مهارات إكسل الأساسية، الصيغ، وتقنيات تصور البيانات.",
-			"cert-excel-2": "مايكروسوفت إكسل II",
-			"cert-excel-2-inst": "كورسيرا",
-			"cert-excel-2-desc": "إدارة البيانات المتقدمة، الصيغ المعقدة، والأدوات التحليلية في إكسل.",
+			"cert-excel": "مايكروسوفت إكسل",
+			"cert-excel-desc": "مهارات إكسل شاملة لإدارة البيانات وتحليلها وتصويرها.",
 			"cert-google-net": "أساسيات شبكات الكمبيوتر",
-			"cert-google-net-inst": "Google",
 			"cert-google-net-desc": "أساسيات الشبكات، بما في ذلك نموذج TCP/IP، بروتوكولات الشبكات، والبنية التحتية.",
 			"cert-google-support": "أساسيات الدعم الفني",
-			"cert-google-support-inst": "Google",
 			"cert-google-support-desc": "المفاهيم الأساسية للدعم الفني، بما في ذلك استكشاف الأخطاء وإصلاحها، خدمة العملاء، وإدارة النظم.",
+			"cert-google-os": "أنظمة التشغيل وأنت: أن تصبح مستخدماً متميزاً",
+			"cert-google-os-desc": "أساسيات أنظمة التشغيل، وإدارة أجهزة الكمبيوتر، واستخدام الأدوات المساعدة.",
 			"volunteering-title": "الخبرة التطوعية",
 			"vol-icpc-title": "المسابقة الدولية للبرمجة لطلاب الجامعات (ICPC) - الدورتان 46 و47",
 			"vol-icpc-date": "أبريل 2024",
