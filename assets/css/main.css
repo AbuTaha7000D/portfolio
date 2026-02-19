@@ -398,9 +398,12 @@ h6 {
 	color: var(--accent-color);
 }
 
-.header .navmenu a .navicon,
-.header .navmenu a:focus .navicon,
+.header .navmenu a .navicon {
+	color: #ffffff;
+}
+
 .header .navmenu a:hover .navicon,
+.header .navmenu a:focus .navicon,
 .header .navmenu .active .navicon,
 .header .navmenu .active:focus .navicon {
 	color: var(--accent-color);
@@ -1180,6 +1183,7 @@ body,
 		opacity: 0;
 		transform: scale(0.8);
 	}
+
 	to {
 		opacity: 1;
 		transform: scale(1);
