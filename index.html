@@ -279,26 +279,74 @@
 					<div class="col-lg-12 d-flex justify-content-center">
 						<ul id="cert-filters" class="cert-filters">
 							<li data-filter="*" class="filter-active" data-i18n="cert-filter-all">All</li>
+							<li data-filter=".professional" data-i18n="cert-filter-professional">Professional</li>
 							<li data-filter=".it" data-i18n="cert-filter-it">IT</li>
 							<li data-filter=".software" data-i18n="cert-filter-software">Software</li>
-							<li data-filter=".professional" data-i18n="cert-filter-professional">Professional</li>
+							<li data-filter=".business" data-i18n="cert-filter-business">Business</li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="row gy-4 cert-container" data-aos="fade-up" data-aos-delay="200">
 
-					<!-- IT Category -->
+					<!-- PROFESSIONAL -->
+					<div class="col-md-6 col-lg-4 cert-item professional software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-fullstack">IBM Full Stack Software Developer Professional
+										Certificate</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-fullstack-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/4c9a64333e0d80c6855df7a6e4aa83f4"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/01e11073-42d9-44cc-801f-05343e828b22"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+									<a href="https://coursera.org/share/52610df0001bfbaa25e7fc585a8f5ce2"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item professional it">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-google-it">Google IT Support Professional Certificate</span>
+								</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-google me-1"></i><span>Google</span></h6>
+								<p class="card-text" data-i18n="cert-google-it-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/9af0e85fcb2536f3ac49bd30920b8bf0"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/70670dae-08a9-441b-aac3-5e37545d9f22"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+									<a href="https://coursera.org/share/7fdcd2af325d4b95e73f64b3836c7383"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- IT -->
 					<div class="col-md-6 col-lg-4 cert-item it">
 						<div class="card h-100 shadow-sm border-0">
 							<div class="card-body d-flex flex-column">
 								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
 										data-i18n="cert-google-support">Technical Support Fundamentals</span></h5>
-								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-google me-1"></i><span
-										data-i18n="cert-google-support-inst">Google</span></h6>
-								<p class="card-text" data-i18n="cert-google-support-desc">Key concepts of technical
-									support, including troubleshooting, customer service, and systems administration.
-								</p>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-google me-1"></i><span>Google</span></h6>
+								<p class="card-text" data-i18n="cert-google-support-desc"></p>
 								<a href="https://coursera.org/share/e3f0a186a9f28f538ab7b30d1734fc02" target="_blank"
 									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
 									Certificate</a>
@@ -312,10 +360,9 @@
 								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
 										data-i18n="cert-google-net">The Bits and Bytes of Computer Networking</span>
 								</h5>
-								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-google me-1"></i><span
-										data-i18n="cert-google-net-inst">Google</span></h6>
-								<p class="card-text" data-i18n="cert-google-net-desc">Foundations of networking,
-									including the TCP/IP model, networking protocols, and infrastructure.</p>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-google me-1"></i><span>Google</span></h6>
+								<p class="card-text" data-i18n="cert-google-net-desc"></p>
 								<a href="https://coursera.org/share/783939401861556bd8974a862352698a" target="_blank"
 									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
 									Certificate</a>
@@ -327,44 +374,11 @@
 						<div class="card h-100 shadow-sm border-0">
 							<div class="card-body d-flex flex-column">
 								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
-										data-i18n="cert-mahara-sec">Introduction to Network Security</span></h5>
-								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-motherboard me-1"></i><span
-										data-i18n="cert-mahara-sec-inst">Mahara-Tech</span></h6>
-								<p class="card-text" data-i18n="cert-mahara-sec-desc">Foundations of securing network
-									infrastructures and data protection.</p>
-								<a href="https://drive.google.com/file/d/1lNMXWGApD9RvYvARemmxCEN_TKkTDDQ0/view"
-									target="_blank" class="btn btn-sm btn-outline-primary mt-auto"
-									data-i18n="cert-view-btn">View Certificate</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-4 cert-item it">
-						<div class="card h-100 shadow-sm border-0">
-							<div class="card-body d-flex flex-column">
-								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
-										data-i18n="cert-mahara-net">Computer Network Fundamentals</span></h5>
-								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-motherboard me-1"></i><span
-										data-i18n="cert-mahara-net-inst">Mahara-Tech</span></h6>
-								<p class="card-text" data-i18n="cert-mahara-net-desc">Networking basics including OSI
-									model, protocols, and network hardware.</p>
-								<a href="https://drive.google.com/file/d/1InsYMy-jzsCAB04poKhReNoIaKC7er-8/view"
-									target="_blank" class="btn btn-sm btn-outline-primary mt-auto"
-									data-i18n="cert-view-btn">View Certificate</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-4 cert-item it">
-						<div class="card h-100 shadow-sm border-0">
-							<div class="card-body d-flex flex-column">
-								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
 										data-i18n="cert-google-os">Operating Systems and You: Becoming a Power
 										User</span></h5>
-								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-google me-1"></i><span
-										data-i18n="cert-google-os-inst">Google</span></h6>
-								<p class="card-text" data-i18n="cert-google-os-desc">Fundamentals of operating systems,
-									managing computer hardware, and utilizing utilities.</p>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-google me-1"></i><span>Google</span></h6>
+								<p class="card-text" data-i18n="cert-google-os-desc"></p>
 								<a href="https://coursera.org/share/5a525932cc83a542b00da267c429c155" target="_blank"
 									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
 									Certificate</a>
@@ -376,11 +390,57 @@
 						<div class="card h-100 shadow-sm border-0">
 							<div class="card-body d-flex flex-column">
 								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
-										data-i18n="cert-iti-cyber">Cybersecurity Internship</span></h5>
-								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-shield-lock me-1"></i><span
-										data-i18n="cert-iti-cyber-inst">ITI</span></h6>
-								<p class="card-text" data-i18n="cert-iti-cyber-desc">Practical training in cybersecurity
-									fundamentals, threat analysis, and protection.</p>
+										data-i18n="cert-google-sysadmin">System Administration and IT Infrastructure
+										Services</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-google me-1"></i><span>Google</span></h6>
+								<p class="card-text" data-i18n="cert-google-sysadmin-desc"></p>
+								<a href="https://coursera.org/share/3d149cf89244c86e24385d6295edafcd" target="_blank"
+									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
+									Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item it">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-google-security">IT Security: Defense against the digital dark
+										arts</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-google me-1"></i><span>Google</span></h6>
+								<p class="card-text" data-i18n="cert-google-security-desc"></p>
+								<a href="https://coursera.org/share/822a6f911509dffa7d4ebd383e8b3a3b" target="_blank"
+									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
+									Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item it">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-google-ai-job">Accelerate Your Job Search with AI</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-google me-1"></i><span>Google</span></h6>
+								<p class="card-text" data-i18n="cert-google-ai-job-desc"></p>
+								<a href="https://coursera.org/share/0f086acb99de17ddf48562fbda0e507d" target="_blank"
+									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
+									Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item it">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-iti-cyber">Cybersecurity Internship – ITI</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-shield-lock me-1"></i><span>ITI</span></h6>
+								<p class="card-text" data-i18n="cert-iti-cyber-desc"></p>
 								<a href="https://drive.google.com/file/d/1vxcQvdM-cv5TLM3trsrN98GRNMbVdzoi/view"
 									target="_blank" class="btn btn-sm btn-outline-primary mt-auto"
 									data-i18n="cert-view-btn">View Certificate</a>
@@ -392,19 +452,44 @@
 						<div class="card h-100 shadow-sm border-0">
 							<div class="card-body d-flex flex-column">
 								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
-										data-i18n="cert-mahara-hacking">Ethical Hacking</span></h5>
-								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-motherboard me-1"></i><span
-										data-i18n="cert-mahara-hacking-inst">Mahara-Tech</span></h6>
-								<p class="card-text" data-i18n="cert-mahara-hacking-desc">Techniques for identifying and
-									addressing security vulnerabilities ethically.</p>
-								<a href="https://drive.google.com/file/d/1T-SGW5yU8W1zOH8SzeUyjNAi3zH58o1P/view"
-									target="_blank" class="btn btn-sm btn-outline-primary mt-auto"
-									data-i18n="cert-view-btn">View Certificate</a>
+										data-i18n="cert-mahara-hacking">Ethical Hacking – MaharaTech</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-motherboard me-1"></i><span>MaharaTech</span></h6>
+								<p class="card-text" data-i18n="cert-mahara-hacking-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://drive.google.com/file/d/1T-SGW5yU8W1zOH8SzeUyjNAi3zH58o1P/view"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://maharatech.gov.eg/badges/badge.php?hash=7c462eaefa50b3a53e0ccb3165fd41b28b70869a"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<!-- Software Category -->
+					<div class="col-md-6 col-lg-4 cert-item it">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-mahara-net">Computer Network Fundamentals – MaharaTech</span>
+								</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-motherboard me-1"></i><span>MaharaTech</span></h6>
+								<p class="card-text" data-i18n="cert-mahara-net-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://drive.google.com/file/d/1InsYMy-jzsCAB04poKhReNoIaKC7er-8/view"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://maharatech.gov.eg/badges/badge.php?hash=50c91142e8f98730ff0793df88c1ba77ae68e3b1"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- SOFTWARE -->
 					<div class="col-md-6 col-lg-4 cert-item software">
 						<div class="card h-100 shadow-sm border-0">
 							<div class="card-body d-flex flex-column">
@@ -412,11 +497,15 @@
 										data-i18n="cert-ibm-software">Introduction to Software Engineering</span></h5>
 								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
 										data-i18n="cert-ibm-inst">IBM</span></h6>
-								<p class="card-text" data-i18n="cert-ibm-software-desc">Overview of software engineering
-									principles, SDLC, and agile methodologies.</p>
-								<a href="https://coursera.org/share/93c422ff90f739faf723dee69b6588a8" target="_blank"
-									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
-									Certificate</a>
+								<p class="card-text" data-i18n="cert-ibm-software-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/93c422ff90f739faf723dee69b6588a8"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/769044a7-6328-4f46-b43c-625e750f6172"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -428,11 +517,15 @@
 										data-i18n="cert-ibm-cloud">Introduction to Cloud Computing</span></h5>
 								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
 										data-i18n="cert-ibm-inst">IBM</span></h6>
-								<p class="card-text" data-i18n="cert-ibm-cloud-desc">Foundational concepts of cloud
-									computing, service models, and infrastructure.</p>
-								<a href="https://coursera.org/share/3e88a0644a632629afe0a69b8dabfb49" target="_blank"
-									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
-									Certificate</a>
+								<p class="card-text" data-i18n="cert-ibm-cloud-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/3e88a0644a632629afe0a69b8dabfb49"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/be526790-3dbd-4795-a4c1-01d812fc823a"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -441,14 +534,19 @@
 						<div class="card h-100 shadow-sm border-0">
 							<div class="card-body d-flex flex-column">
 								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
-										data-i18n="cert-mahara-cloud">Cloud & Virtualization</span></h5>
-								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-motherboard me-1"></i><span
-										data-i18n="cert-mahara-inst">Mahara-Tech</span></h6>
-								<p class="card-text" data-i18n="cert-mahara-cloud-desc">Core concepts of virtualization
-									technologies and cloud deployment models.</p>
-								<a href="https://drive.google.com/file/d/1oHKGvHafjInQcUjOM8zL30Qs1lfM5UeV/view"
-									target="_blank" class="btn btn-sm btn-outline-primary mt-auto"
-									data-i18n="cert-view-btn">View Certificate</a>
+										data-i18n="cert-ibm-html-css-js">Introduction to HTML, CSS, & JavaScript</span>
+								</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-html-css-js-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/ffed113c8b19e5406c5d21d19553c1b8"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/5b9909b0-bba3-40ed-a16e-240a3fccf7e2"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -461,27 +559,15 @@
 										JavaScript</span></h5>
 								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
 										data-i18n="cert-ibm-inst">IBM</span></h6>
-								<p class="card-text" data-i18n="cert-ibm-webdev-desc">Core web development concepts
-									including HTML5, CSS3, and JavaScript programming.</p>
-								<a href="https://coursera.org/share/85521ae575cce5939ad548bca422e43e" target="_blank"
-									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
-									Certificate</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-4 cert-item software">
-						<div class="card h-100 shadow-sm border-0">
-							<div class="card-body d-flex flex-column">
-								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
-										data-i18n="cert-ibm-html">Introduction to HTML, CSS, & JavaScript</span></h5>
-								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
-										data-i18n="cert-ibm-inst">IBM</span></h6>
-								<p class="card-text" data-i18n="cert-ibm-html-desc">Foundational skills for web
-									development using HTML, CSS, and basic JavaScript.</p>
-								<a href="https://coursera.org/share/ffed113c8b19e5406c5d21d19553c1b8" target="_blank"
-									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
-									Certificate</a>
+								<p class="card-text" data-i18n="cert-ibm-webdev-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/85521ae575cce5939ad548bca422e43e"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/b92d0f65-9786-4368-a5b9-3bf14ddd049c"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -493,11 +579,56 @@
 										data-i18n="cert-ibm-git">Getting Started with Git and GitHub</span></h5>
 								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
 										data-i18n="cert-ibm-inst">IBM</span></h6>
-								<p class="card-text" data-i18n="cert-ibm-git-desc">Essential skills for version control
-									using Git and collaborative development on GitHub.</p>
-								<a href="https://coursera.org/share/92cf55eb2f5777f4afa645ef4888ea08" target="_blank"
-									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
-									Certificate</a>
+								<p class="card-text" data-i18n="cert-ibm-git-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/92cf55eb2f5777f4afa645ef4888ea08"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/e5828110-a240-40a8-8532-e95e2fbabaa8"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-react">Developing Front-End Apps with React</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-react-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/044bf411c1f11cb698417e8f6dfdcd9a"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/cbaa1515-b829-469e-923e-7dd1ab45ac35"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-node">Developing Back-End Apps with Node.js and
+										Express</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-node-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/7e2fcfd5b06d77e0934cfdface3a40c1"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/00eac184-9656-46fd-928a-06abe2204734"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -510,12 +641,15 @@
 								</h5>
 								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
 										data-i18n="cert-ibm-inst">IBM</span></h6>
-								<p class="card-text" data-i18n="cert-ibm-python-ds-desc">Introduction to Python
-									programming
-									principles and its applications in data science and AI.</p>
-								<a href="https://coursera.org/share/170947ca43cd14194758d36525d03e4e" target="_blank"
-									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
-									Certificate</a>
+								<p class="card-text" data-i18n="cert-ibm-python-ds-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/170947ca43cd14194758d36525d03e4e"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/35a012bb-75af-4e86-b341-fbe7bbc0004b"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -524,29 +658,194 @@
 						<div class="card h-100 shadow-sm border-0">
 							<div class="card-body d-flex flex-column">
 								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
-										data-i18n="cert-ibm-flask">Developing AI Applications with Python and
+										data-i18n="cert-ibm-ai-python">Developing AI Applications with Python and
 										Flask</span></h5>
 								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
 										data-i18n="cert-ibm-inst">IBM</span></h6>
-								<p class="card-text" data-i18n="cert-ibm-flask-desc">Building and deploying AI-powered
-									web applications using Python and the Flask framework.</p>
-								<a href="https://coursera.org/share/bb934ba48bd24bc2d9d61f8a112097dd" target="_blank"
+								<p class="card-text" data-i18n="cert-ibm-ai-python-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/bb934ba48bd24bc2d9d61f8a112097dd"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/fa3c2e7f-c423-443f-9f4e-b2cf41ae899d"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-django">Django Application Development with SQL and
+										Databases</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-django-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/50ca4c98d5a31915c10aa3fb1a1e32ba"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/c8600247-c358-42e1-b5e1-c11229aa788c"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-containers">Introduction to Containers w/ Docker, Kubernetes
+										& OpenShift</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-containers-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/f6b496df23d51bf76659968bcc55705f"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/ebd9822a-bea9-4f15-bfc2-e143674828d5"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-microservices">Application Development using Microservices
+										and Serverless</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-microservices-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/d0870d99ed0e465b21b045aaa3d827f9"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/8e45c9ed-532d-4746-9155-e811e59ea8a3"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-capstone">Full Stack Application Development Capstone
+										Project</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-capstone-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/722eddf2a74e35c4871f1d2cab4ef582"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/288eda66-c7db-4a01-adaa-b48545b0136d"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-assessment">Full Stack Software Developer Assessment</span>
+								</h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-assessment-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/5fe2b08a9e2db73f3a3b4f8c1fb867e2"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/dc59ab2d-8dba-46b2-ae38-4caf9dc20e0c"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-genai">Generative AI: Elevate your Software Development
+										Career</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-genai-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/6ff311c92ed2cd2a1432f5bd9c42cb40"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/c19e43cb-a3c1-492a-8410-29912c075769"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-career">Software Developer Career Guide and Interview
+										Preparation</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-career-desc"></p>
+								<div class="mt-auto d-flex flex-wrap gap-2">
+									<a href="https://coursera.org/share/97ef5b1b720d1d184d2a7b729c7d8a0c"
+										target="_blank" class="btn btn-sm btn-outline-primary"
+										data-i18n="cert-view-btn">View Certificate</a>
+									<a href="https://www.credly.com/badges/9bb5a1d2-232e-4c18-a0ff-fe0c1326ca29"
+										target="_blank" class="btn btn-sm btn-outline-secondary"
+										data-i18n="cert-view-badge">View Badge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- BUSINESS -->
+					<div class="col-md-6 col-lg-4 cert-item business">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-ibm-software">Introduction to Software Engineering</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
+										data-i18n="cert-ibm-inst">IBM</span></h6>
+								<p class="card-text" data-i18n="cert-ibm-software-desc"></p>
+								<a href="https://coursera.org/share/48b19e7e725d2cffd0ce84f9361ad2c6" target="_blank"
 									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
 									Certificate</a>
 							</div>
 						</div>
 					</div>
 
-					<!-- Professional Category -->
-					<div class="col-md-6 col-lg-4 cert-item professional">
+					<div class="col-md-6 col-lg-4 cert-item business">
 						<div class="card h-100 shadow-sm border-0">
 							<div class="card-body d-flex flex-column">
 								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
 										data-i18n="cert-ibm-agility">Delivering Quality Work with Agility</span></h5>
 								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-building me-1"></i><span
 										data-i18n="cert-ibm-inst">IBM</span></h6>
-								<p class="card-text" data-i18n="cert-ibm-agility-desc">Principles of Agile methodology
-									and techniques for delivering high-quality work efficiently.</p>
+								<p class="card-text" data-i18n="cert-ibm-agility-desc"></p>
 								<a href="https://coursera.org/share/2461bf23da6486c5d1f718aadd0694d1" target="_blank"
 									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
 									Certificate</a>
@@ -554,19 +853,48 @@
 						</div>
 					</div>
 
-					<div class="col-md-6 col-lg-4 cert-item professional">
+					<div class="col-md-6 col-lg-4 cert-item business">
 						<div class="card h-100 shadow-sm border-0">
 							<div class="card-body d-flex flex-column">
 								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
 										data-i18n="cert-excel">Microsoft Excel</span></h5>
 								<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-microsoft me-1"></i><span
 										data-i18n="cert-coursera-inst">Coursera</span></h6>
-								<p class="card-text" data-i18n="cert-excel-desc">Comprehensive Excel skills for data
-									management,
-									analysis, and visualization.</p>
+								<p class="card-text" data-i18n="cert-excel-desc"></p>
 								<a href="https://coursera.org/share/d184ba6e74b1e319d928aefb97182b2b" target="_blank"
 									class="btn btn-sm btn-outline-primary mt-auto" data-i18n="cert-view-btn">View
 									Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- KEEP EXISTING (NON-PROVIDED) -->
+					<div class="col-md-6 col-lg-4 cert-item it">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-mahara-sec">Introduction to Network Security</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-motherboard me-1"></i><span>MaharaTech</span></h6>
+								<p class="card-text" data-i18n="cert-mahara-sec-desc"></p>
+								<a href="https://drive.google.com/file/d/1lNMXWGApD9RvYvARemmxCEN_TKkTDDQ0/view"
+									target="_blank" class="btn btn-sm btn-outline-primary mt-auto"
+									data-i18n="cert-view-btn">View Certificate</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 cert-item software">
+						<div class="card h-100 shadow-sm border-0">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title text-danger"><i class="bi bi-patch-check-fill me-2"></i><span
+										data-i18n="cert-mahara-cloud">Cloud & Virtualization</span></h5>
+								<h6 class="card-subtitle mb-2 text-muted"><i
+										class="bi bi-motherboard me-1"></i><span>MaharaTech</span></h6>
+								<p class="card-text" data-i18n="cert-mahara-cloud-desc"></p>
+								<a href="https://drive.google.com/file/d/1oHKGvHafjInQcUjOM8zL30Qs1lfM5UeV/view"
+									target="_blank" class="btn btn-sm btn-outline-primary mt-auto"
+									data-i18n="cert-view-btn">View Certificate</a>
 							</div>
 						</div>
 					</div>
